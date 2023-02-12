@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>npm常见库使用 | 前端笔记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/vuepress/head.png">
+    <meta name="description" content="常用功能记录">
+    
+    <link rel="preload" href="/vuepress/assets/css/0.styles.af1e595c.css" as="style"><link rel="preload" href="/vuepress/assets/js/app.ce8fac21.js" as="script"><link rel="preload" href="/vuepress/assets/js/3.cc7a75da.js" as="script"><link rel="preload" href="/vuepress/assets/js/41.e5f6527f.js" as="script"><link rel="prefetch" href="/vuepress/assets/js/1.b285d1f0.js"><link rel="prefetch" href="/vuepress/assets/js/10.77cb09d2.js"><link rel="prefetch" href="/vuepress/assets/js/11.6342cc69.js"><link rel="prefetch" href="/vuepress/assets/js/12.f89da415.js"><link rel="prefetch" href="/vuepress/assets/js/13.85f0bec7.js"><link rel="prefetch" href="/vuepress/assets/js/14.616de84f.js"><link rel="prefetch" href="/vuepress/assets/js/15.b6e7660e.js"><link rel="prefetch" href="/vuepress/assets/js/16.3a76af77.js"><link rel="prefetch" href="/vuepress/assets/js/17.0f9e8a04.js"><link rel="prefetch" href="/vuepress/assets/js/18.f7b0ff3d.js"><link rel="prefetch" href="/vuepress/assets/js/19.a9a90c62.js"><link rel="prefetch" href="/vuepress/assets/js/20.f7828815.js"><link rel="prefetch" href="/vuepress/assets/js/21.18298c33.js"><link rel="prefetch" href="/vuepress/assets/js/22.99faa4c9.js"><link rel="prefetch" href="/vuepress/assets/js/23.374f8adf.js"><link rel="prefetch" href="/vuepress/assets/js/24.35cecd23.js"><link rel="prefetch" href="/vuepress/assets/js/25.1f5d9cde.js"><link rel="prefetch" href="/vuepress/assets/js/26.23a4236b.js"><link rel="prefetch" href="/vuepress/assets/js/27.66cf1319.js"><link rel="prefetch" href="/vuepress/assets/js/28.f0302472.js"><link rel="prefetch" href="/vuepress/assets/js/29.155b728d.js"><link rel="prefetch" href="/vuepress/assets/js/30.8275db6d.js"><link rel="prefetch" href="/vuepress/assets/js/31.60254a0d.js"><link rel="prefetch" href="/vuepress/assets/js/32.88a4b356.js"><link rel="prefetch" href="/vuepress/assets/js/33.1c6f37dd.js"><link rel="prefetch" href="/vuepress/assets/js/34.4ce54cd4.js"><link rel="prefetch" href="/vuepress/assets/js/35.9b37b408.js"><link rel="prefetch" href="/vuepress/assets/js/36.9434aa3d.js"><link rel="prefetch" href="/vuepress/assets/js/37.aaf9735f.js"><link rel="prefetch" href="/vuepress/assets/js/38.8b83c451.js"><link rel="prefetch" href="/vuepress/assets/js/39.b45e1334.js"><link rel="prefetch" href="/vuepress/assets/js/4.a67936a3.js"><link rel="prefetch" href="/vuepress/assets/js/40.61d98dcd.js"><link rel="prefetch" href="/vuepress/assets/js/42.c6aea904.js"><link rel="prefetch" href="/vuepress/assets/js/43.94f65b6f.js"><link rel="prefetch" href="/vuepress/assets/js/44.5c81d4e2.js"><link rel="prefetch" href="/vuepress/assets/js/45.c7c0d38e.js"><link rel="prefetch" href="/vuepress/assets/js/46.415097f2.js"><link rel="prefetch" href="/vuepress/assets/js/47.a10079a3.js"><link rel="prefetch" href="/vuepress/assets/js/48.f09663e3.js"><link rel="prefetch" href="/vuepress/assets/js/49.9df9063d.js"><link rel="prefetch" href="/vuepress/assets/js/5.7498ca8b.js"><link rel="prefetch" href="/vuepress/assets/js/50.dd182069.js"><link rel="prefetch" href="/vuepress/assets/js/51.070f4fa2.js"><link rel="prefetch" href="/vuepress/assets/js/52.c01a9efc.js"><link rel="prefetch" href="/vuepress/assets/js/53.034a0e5c.js"><link rel="prefetch" href="/vuepress/assets/js/6.c7c96692.js"><link rel="prefetch" href="/vuepress/assets/js/7.19065d28.js"><link rel="prefetch" href="/vuepress/assets/js/8.0af60bd4.js"><link rel="prefetch" href="/vuepress/assets/js/9.9215a143.js">
+    <link rel="stylesheet" href="/vuepress/assets/css/0.styles.af1e595c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress/" class="home-link router-link-active"><img src="/vuepress/logo.png" alt="前端笔记" class="logo"> <span class="site-name can-hide">前端笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="html-js" class="dropdown-title"><span class="title">html-js</span> <span class="arrow down"></span></button> <button type="button" aria-label="html-js" class="mobile-dropdown-title"><span class="title">html-js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/html/" class="nav-link">
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/js/" class="nav-link">
+  js
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress/uniapp/" class="nav-link">
+  uniapp
+</a></div><div class="nav-item"><a href="/vuepress/vue/" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/vuepress/react/" class="nav-link">
+  react
+</a></div><div class="nav-item"><a href="/vuepress/wxMini/" class="nav-link">
+  微信小程序
+</a></div><div class="nav-item"><a href="/vuepress/audition/" class="nav-link">
+  面试
+</a></div><div class="nav-item"><a href="/vuepress/performance/" class="nav-link">
+  性能优化
+</a></div><div class="nav-item"><a href="/vuepress/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他技术" class="dropdown-title"><span class="title">其他技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他技术" class="mobile-dropdown-title"><span class="title">其他技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/echarts/" class="nav-link">
+  echarts
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/gitSvn/" class="nav-link">
+  git &amp; svn
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/jquery/" class="nav-link">
+  jquery
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/vite/" class="nav-link">
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/flutter/" class="nav-link">
+  flutter
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/react native/" class="nav-link">
+  react native
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/vsCode/" class="nav-link">
+  vs code插件和配置
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/db/" class="nav-link">
+  数据库的连接
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/devOps/" class="nav-link">
+  前端部署
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件 &amp; 库" class="dropdown-title"><span class="title">组件 &amp; 库</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件 &amp; 库" class="mobile-dropdown-title"><span class="title">组件 &amp; 库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/components/" class="nav-link">
+  组件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/plugins/" class="nav-link">
+  插件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/npm/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  常用npm库
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级前端" class="dropdown-title"><span class="title">高级前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="高级前端" class="mobile-dropdown-title"><span class="title">高级前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/designMode/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/method/" class="nav-link">
+  解决方案
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/cli/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/safe/" class="nav-link">
+  前端安全
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="链接" class="dropdown-title"><span class="title">链接</span> <span class="arrow down"></span></button> <button type="button" aria-label="链接" class="mobile-dropdown-title"><span class="title">链接</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ds-web.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的博客hexo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/dusehngcsdn?spm=1000.2115.3001.5343/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的博客csdn
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/dusheng-github" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.npmjs.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的npm
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="html-js" class="dropdown-title"><span class="title">html-js</span> <span class="arrow down"></span></button> <button type="button" aria-label="html-js" class="mobile-dropdown-title"><span class="title">html-js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/html/" class="nav-link">
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/js/" class="nav-link">
+  js
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress/uniapp/" class="nav-link">
+  uniapp
+</a></div><div class="nav-item"><a href="/vuepress/vue/" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/vuepress/react/" class="nav-link">
+  react
+</a></div><div class="nav-item"><a href="/vuepress/wxMini/" class="nav-link">
+  微信小程序
+</a></div><div class="nav-item"><a href="/vuepress/audition/" class="nav-link">
+  面试
+</a></div><div class="nav-item"><a href="/vuepress/performance/" class="nav-link">
+  性能优化
+</a></div><div class="nav-item"><a href="/vuepress/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他技术" class="dropdown-title"><span class="title">其他技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他技术" class="mobile-dropdown-title"><span class="title">其他技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/echarts/" class="nav-link">
+  echarts
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/gitSvn/" class="nav-link">
+  git &amp; svn
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/jquery/" class="nav-link">
+  jquery
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/vite/" class="nav-link">
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/flutter/" class="nav-link">
+  flutter
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/react native/" class="nav-link">
+  react native
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/vsCode/" class="nav-link">
+  vs code插件和配置
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/db/" class="nav-link">
+  数据库的连接
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/devOps/" class="nav-link">
+  前端部署
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件 &amp; 库" class="dropdown-title"><span class="title">组件 &amp; 库</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件 &amp; 库" class="mobile-dropdown-title"><span class="title">组件 &amp; 库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/components/" class="nav-link">
+  组件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/plugins/" class="nav-link">
+  插件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/npm/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  常用npm库
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级前端" class="dropdown-title"><span class="title">高级前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="高级前端" class="mobile-dropdown-title"><span class="title">高级前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/designMode/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/method/" class="nav-link">
+  解决方案
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/cli/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/safe/" class="nav-link">
+  前端安全
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="链接" class="dropdown-title"><span class="title">链接</span> <span class="arrow down"></span></button> <button type="button" aria-label="链接" class="mobile-dropdown-title"><span class="title">链接</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ds-web.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的博客hexo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/dusehngcsdn?spm=1000.2115.3001.5343/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的博客csdn
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/dusheng-github" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.npmjs.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的npm
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/vuepress/npm/" aria-current="page" class="sidebar-heading clickable router-link-exact-active router-link-active open active"><span>npm库</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress/npm/" aria-current="page" class="active sidebar-link">npm常见库使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress/npm/#nvm库的使用" class="sidebar-link">nvm库的使用</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="npm常见库使用"><a href="#npm常见库使用" class="header-anchor">#</a> npm常见库使用</h1> <h2 id="nvm库的使用"><a href="#nvm库的使用" class="header-anchor">#</a> nvm库的使用</h2> <div class="custom-block warning"><p class="custom-block-title">为什么要用nvm?</p> <p>nvm顾名思义, 就是node版本控制器, 通过操作可以切换不同的node版本, 此时的nodejs文件夹其实是软链nvm当前的node版本</p></div> <h3 id="下载"><a href="#下载" class="header-anchor">#</a> 下载</h3> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>下载前请将本地的node卸载干净!!!</p></div> <p><a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="noopener noreferrer">下载地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="使用命令"><a href="#使用命令" class="header-anchor">#</a> 使用命令</h3> <div class="language-js extra-class"><pre class="language-js"><code>nvm <span class="token operator">-</span>v <span class="token comment">// 查看当前nvm版本</span>
+nvm list available <span class="token comment">// 查看当前可下载的node版本</span>
+nvm install <span class="token number">14.20</span><span class="token number">.1</span> <span class="token comment">// 安装14.20.1版本的nodejs</span>
+nvm list <span class="token comment">// 查看所有可切换的node版本</span>
+nvm use <span class="token number">14.20</span><span class="token number">.1</span> <span class="token comment">// 切换node到14.20.1版本</span>
+</code></pre></div><h3 id="其他命令"><a href="#其他命令" class="header-anchor">#</a> 其他命令</h3> <ul><li>nvm arch：显示node是运行在32位还是64位。</li> <li>nvm install [version] [arch] ：安装node， version是特定版本也可以是最新稳定版本latest。可选参数arch指定安装32位还是64位版本，默认是系统位数。可以添加--insecure绕过远程服务 器的SSL。</li> <li>nvm list [available] ：显示已安装的列表。可选参数available，显示可安装的所有版本。list可简化为ls。</li> <li>nvm on ：开启node.js版本管理。</li> <li>nvm off ：关闭node.js版本管理。</li> <li>nvm proxy [url] ：设置下载代理。不加可选参数url，显示当前代理。将url设置为none则移除代理。</li> <li>nvm node_mirror [url] ：设置node镜像。默认是https://nodejs.org/dist/。如果不写url，则使用默认url。设置后可至安装目录settings.txt文件查看，也可直接在该文件操作。</li> <li>nvm npm_mirror [url] ：设置npm镜像。https://github.com/npm/cli/archive/。如果不写url，则使用默认url。设置后可至安装目录settings.txt文件查看，也可直接在该文件操作。</li> <li>nvm uninstall [version] ：卸载指定版本node。</li> <li>nvm use [version] [arch] ：使用制定版本node。可指定32/64位。</li> <li>nvm root [path] ：设置存储不同版本node的目录。如果未设置，默认使用当前目录。</li> <li>nvm version ：显示nvm版本。version可简化为v。</li></ul> <h3 id="nvm-常见问题"><a href="#nvm-常见问题" class="header-anchor">#</a> nvm 常见问题</h3> <p>如果下载node过慢，请更换国内镜像源, 在 nvm 的安装路径下，找到 settings.txt(C:\Users[用户名]\AppData\Roaming\nvm)，设置node_mirro与npm_mirror为国内镜像地址。下载就飞快了~~</p> <div class="language-bash extra-class"><pre class="language-bash"><code>root: D:<span class="token punctuation">\</span>nvm
+path: D:<span class="token punctuation">\</span>nodejs
+
+node_mirror: https://npm.taobao.org/mirrors/node/
+npm_mirror: https://npm.taobao.org/mirrors/npm/
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress/assets/js/app.ce8fac21.js" defer></script><script src="/vuepress/assets/js/3.cc7a75da.js" defer></script><script src="/vuepress/assets/js/41.e5f6527f.js" defer></script>
+  </body>
+</html>

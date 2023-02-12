@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>uniapp | 前端笔记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/vuepress/head.png">
+    <meta name="description" content="常用功能记录">
+    
+    <link rel="preload" href="/vuepress/assets/css/0.styles.af1e595c.css" as="style"><link rel="preload" href="/vuepress/assets/js/app.ce8fac21.js" as="script"><link rel="preload" href="/vuepress/assets/js/3.cc7a75da.js" as="script"><link rel="preload" href="/vuepress/assets/js/48.f09663e3.js" as="script"><link rel="prefetch" href="/vuepress/assets/js/1.b285d1f0.js"><link rel="prefetch" href="/vuepress/assets/js/10.77cb09d2.js"><link rel="prefetch" href="/vuepress/assets/js/11.6342cc69.js"><link rel="prefetch" href="/vuepress/assets/js/12.f89da415.js"><link rel="prefetch" href="/vuepress/assets/js/13.85f0bec7.js"><link rel="prefetch" href="/vuepress/assets/js/14.616de84f.js"><link rel="prefetch" href="/vuepress/assets/js/15.b6e7660e.js"><link rel="prefetch" href="/vuepress/assets/js/16.3a76af77.js"><link rel="prefetch" href="/vuepress/assets/js/17.0f9e8a04.js"><link rel="prefetch" href="/vuepress/assets/js/18.f7b0ff3d.js"><link rel="prefetch" href="/vuepress/assets/js/19.a9a90c62.js"><link rel="prefetch" href="/vuepress/assets/js/20.f7828815.js"><link rel="prefetch" href="/vuepress/assets/js/21.18298c33.js"><link rel="prefetch" href="/vuepress/assets/js/22.99faa4c9.js"><link rel="prefetch" href="/vuepress/assets/js/23.374f8adf.js"><link rel="prefetch" href="/vuepress/assets/js/24.35cecd23.js"><link rel="prefetch" href="/vuepress/assets/js/25.1f5d9cde.js"><link rel="prefetch" href="/vuepress/assets/js/26.23a4236b.js"><link rel="prefetch" href="/vuepress/assets/js/27.66cf1319.js"><link rel="prefetch" href="/vuepress/assets/js/28.f0302472.js"><link rel="prefetch" href="/vuepress/assets/js/29.155b728d.js"><link rel="prefetch" href="/vuepress/assets/js/30.8275db6d.js"><link rel="prefetch" href="/vuepress/assets/js/31.60254a0d.js"><link rel="prefetch" href="/vuepress/assets/js/32.88a4b356.js"><link rel="prefetch" href="/vuepress/assets/js/33.1c6f37dd.js"><link rel="prefetch" href="/vuepress/assets/js/34.4ce54cd4.js"><link rel="prefetch" href="/vuepress/assets/js/35.9b37b408.js"><link rel="prefetch" href="/vuepress/assets/js/36.9434aa3d.js"><link rel="prefetch" href="/vuepress/assets/js/37.aaf9735f.js"><link rel="prefetch" href="/vuepress/assets/js/38.8b83c451.js"><link rel="prefetch" href="/vuepress/assets/js/39.b45e1334.js"><link rel="prefetch" href="/vuepress/assets/js/4.a67936a3.js"><link rel="prefetch" href="/vuepress/assets/js/40.61d98dcd.js"><link rel="prefetch" href="/vuepress/assets/js/41.e5f6527f.js"><link rel="prefetch" href="/vuepress/assets/js/42.c6aea904.js"><link rel="prefetch" href="/vuepress/assets/js/43.94f65b6f.js"><link rel="prefetch" href="/vuepress/assets/js/44.5c81d4e2.js"><link rel="prefetch" href="/vuepress/assets/js/45.c7c0d38e.js"><link rel="prefetch" href="/vuepress/assets/js/46.415097f2.js"><link rel="prefetch" href="/vuepress/assets/js/47.a10079a3.js"><link rel="prefetch" href="/vuepress/assets/js/49.9df9063d.js"><link rel="prefetch" href="/vuepress/assets/js/5.7498ca8b.js"><link rel="prefetch" href="/vuepress/assets/js/50.dd182069.js"><link rel="prefetch" href="/vuepress/assets/js/51.070f4fa2.js"><link rel="prefetch" href="/vuepress/assets/js/52.c01a9efc.js"><link rel="prefetch" href="/vuepress/assets/js/53.034a0e5c.js"><link rel="prefetch" href="/vuepress/assets/js/6.c7c96692.js"><link rel="prefetch" href="/vuepress/assets/js/7.19065d28.js"><link rel="prefetch" href="/vuepress/assets/js/8.0af60bd4.js"><link rel="prefetch" href="/vuepress/assets/js/9.9215a143.js">
+    <link rel="stylesheet" href="/vuepress/assets/css/0.styles.af1e595c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress/" class="home-link router-link-active"><img src="/vuepress/logo.png" alt="前端笔记" class="logo"> <span class="site-name can-hide">前端笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="html-js" class="dropdown-title"><span class="title">html-js</span> <span class="arrow down"></span></button> <button type="button" aria-label="html-js" class="mobile-dropdown-title"><span class="title">html-js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/html/" class="nav-link">
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/js/" class="nav-link">
+  js
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress/uniapp/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  uniapp
+</a></div><div class="nav-item"><a href="/vuepress/vue/" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/vuepress/react/" class="nav-link">
+  react
+</a></div><div class="nav-item"><a href="/vuepress/wxMini/" class="nav-link">
+  微信小程序
+</a></div><div class="nav-item"><a href="/vuepress/audition/" class="nav-link">
+  面试
+</a></div><div class="nav-item"><a href="/vuepress/performance/" class="nav-link">
+  性能优化
+</a></div><div class="nav-item"><a href="/vuepress/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他技术" class="dropdown-title"><span class="title">其他技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他技术" class="mobile-dropdown-title"><span class="title">其他技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/echarts/" class="nav-link">
+  echarts
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/gitSvn/" class="nav-link">
+  git &amp; svn
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/jquery/" class="nav-link">
+  jquery
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/vite/" class="nav-link">
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/flutter/" class="nav-link">
+  flutter
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/react native/" class="nav-link">
+  react native
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/vsCode/" class="nav-link">
+  vs code插件和配置
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/db/" class="nav-link">
+  数据库的连接
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/devOps/" class="nav-link">
+  前端部署
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件 &amp; 库" class="dropdown-title"><span class="title">组件 &amp; 库</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件 &amp; 库" class="mobile-dropdown-title"><span class="title">组件 &amp; 库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/components/" class="nav-link">
+  组件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/plugins/" class="nav-link">
+  插件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/npm/" class="nav-link">
+  常用npm库
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级前端" class="dropdown-title"><span class="title">高级前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="高级前端" class="mobile-dropdown-title"><span class="title">高级前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/designMode/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/method/" class="nav-link">
+  解决方案
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/cli/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/safe/" class="nav-link">
+  前端安全
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="链接" class="dropdown-title"><span class="title">链接</span> <span class="arrow down"></span></button> <button type="button" aria-label="链接" class="mobile-dropdown-title"><span class="title">链接</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ds-web.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的博客hexo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/dusehngcsdn?spm=1000.2115.3001.5343/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的博客csdn
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/dusheng-github" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.npmjs.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的npm
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="html-js" class="dropdown-title"><span class="title">html-js</span> <span class="arrow down"></span></button> <button type="button" aria-label="html-js" class="mobile-dropdown-title"><span class="title">html-js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/html/" class="nav-link">
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/js/" class="nav-link">
+  js
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress/uniapp/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  uniapp
+</a></div><div class="nav-item"><a href="/vuepress/vue/" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/vuepress/react/" class="nav-link">
+  react
+</a></div><div class="nav-item"><a href="/vuepress/wxMini/" class="nav-link">
+  微信小程序
+</a></div><div class="nav-item"><a href="/vuepress/audition/" class="nav-link">
+  面试
+</a></div><div class="nav-item"><a href="/vuepress/performance/" class="nav-link">
+  性能优化
+</a></div><div class="nav-item"><a href="/vuepress/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他技术" class="dropdown-title"><span class="title">其他技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他技术" class="mobile-dropdown-title"><span class="title">其他技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/echarts/" class="nav-link">
+  echarts
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/gitSvn/" class="nav-link">
+  git &amp; svn
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/jquery/" class="nav-link">
+  jquery
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/vite/" class="nav-link">
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/flutter/" class="nav-link">
+  flutter
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/react native/" class="nav-link">
+  react native
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/vsCode/" class="nav-link">
+  vs code插件和配置
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/db/" class="nav-link">
+  数据库的连接
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/devOps/" class="nav-link">
+  前端部署
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件 &amp; 库" class="dropdown-title"><span class="title">组件 &amp; 库</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件 &amp; 库" class="mobile-dropdown-title"><span class="title">组件 &amp; 库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/components/" class="nav-link">
+  组件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/plugins/" class="nav-link">
+  插件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/npm/" class="nav-link">
+  常用npm库
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级前端" class="dropdown-title"><span class="title">高级前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="高级前端" class="mobile-dropdown-title"><span class="title">高级前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/designMode/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/method/" class="nav-link">
+  解决方案
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/cli/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/safe/" class="nav-link">
+  前端安全
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="链接" class="dropdown-title"><span class="title">链接</span> <span class="arrow down"></span></button> <button type="button" aria-label="链接" class="mobile-dropdown-title"><span class="title">链接</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ds-web.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的博客hexo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/dusehngcsdn?spm=1000.2115.3001.5343/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的博客csdn
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/dusheng-github" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.npmjs.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的npm
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/vuepress/uniapp/" aria-current="page" class="sidebar-heading clickable router-link-exact-active router-link-active open active"><span>uniapp指南</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress/uniapp/" aria-current="page" class="active sidebar-link">uniapp</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress/uniapp/#前端常用-ui" class="sidebar-link">前端常用 ui</a></li><li class="sidebar-sub-header"><a href="/vuepress/uniapp/#uniapp-引入vant-ui-和-vant-weapp" class="sidebar-link">uniapp 引入vant-ui 和 vant weapp</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="uniapp"><a href="#uniapp" class="header-anchor">#</a> uniapp</h1> <h2 id="前端常用-ui"><a href="#前端常用-ui" class="header-anchor">#</a> 前端常用 ui</h2> <table><thead><tr><th>平台</th> <th>react</th> <th>vue</th></tr></thead> <tbody><tr><td>pc</td> <td><a href="https://ant.design/components/overview-cn/" target="_blank" rel="noopener noreferrer">antd<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></td> <td><a href="https://element.eleme.cn/#/zh-CN/component/installation" target="_blank" rel="noopener noreferrer">element<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://www.iviewui.com/view-ui-plus/component/base/button" target="_blank" rel="noopener noreferrer">iview<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></td></tr> <tr><td>移动端 h5</td> <td>-</td> <td><a href="https://vant-ui.github.io/vant/#/zh-CN/" target="_blank" rel="noopener noreferrer">vant-ui<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></td></tr> <tr><td>小程序</td> <td><a href="https://taro-docs.jd.com/docs/components/viewContainer/share-element" target="_blank" rel="noopener noreferrer">taro<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></td> <td><a href="https://vant-ui.github.io/vant/#/zh-CN/" target="_blank" rel="noopener noreferrer">uniapp<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://youzan.github.io/vant-weapp/#/button" target="_blank" rel="noopener noreferrer">vant weapp<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://weapp.iviewui.com/docs/guide/start" target="_blank" rel="noopener noreferrer">iview weapp<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://github.com/weilanwl/coloruicss" target="_blank" rel="noopener noreferrer">color-ui<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></td></tr> <tr><td>跨平台</td> <td>-</td> <td><a href="https://vant-ui.github.io/vant/#/zh-CN/" target="_blank" rel="noopener noreferrer">uniapp<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://uniapp.dcloud.net.cn/component/uniui/uni-ui.html" target="_blank" rel="noopener noreferrer">uni-ui<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://www.uviewui.com/components/quickstart.html" target="_blank" rel="noopener noreferrer">uView<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></td></tr></tbody></table> <h2 id="uniapp-引入vant-ui-和-vant-weapp"><a href="#uniapp-引入vant-ui-和-vant-weapp" class="header-anchor">#</a> uniapp 引入<code>vant-ui</code> 和 <code>vant weapp</code></h2> <h3 id="uniapp-h5-引入vant-ui"><a href="#uniapp-h5-引入vant-ui" class="header-anchor">#</a> uniapp &gt; h5 引入<code>vant-ui</code></h3> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>只做 h5 的话, 没必要用 uniapp</p></div> <p>1.下载和安装</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> i vant <span class="token parameter variable">-S</span> <span class="token parameter variable">--production</span>
+<span class="token operator">&amp;</span>
+<span class="token function">yarn</span> <span class="token function">add</span> vant <span class="token parameter variable">--production</span>
+</code></pre></div><p>2.main.js 引入 vant</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Vant <span class="token keyword">from</span> <span class="token string">&quot;vant&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;vant/lib/index.css&quot;</span><span class="token punctuation">;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vant<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>3.App.vue 的 style 中引入样式</p> <div class="language-css extra-class"><pre class="language-css"><code>&lt;style&gt;
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">&quot;~@/vant/lib/index.css&quot;</span><span class="token punctuation">;</span></span>
+&lt;/style&gt;
+</code></pre></div><h3 id="uniapp-小程序引入vant-weapp"><a href="#uniapp-小程序引入vant-weapp" class="header-anchor">#</a> uniapp &gt; 小程序引入<code>vant weapp</code></h3> <p>1.引入</p> <ul><li><p>在项目中新建文件夹 wxcomponents --&gt; vant</p></li> <li><p>将 vant Weapp 下载到本地</p></li> <li><p>解压后，将 dist 文件夹拷贝到 vant 目录中</p> <p>2.使用</p></li> <li><p>在 App.vue 中的 style 引入</p></li> <li><p>@import &quot;/wxcomponents/vant/dist/common/index.wxss&quot;;</p></li> <li><p>引用和使用（两种方法）</p></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 页面引入 page.json</span>
+<span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pages/index/index&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;style&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;usingComponents&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string-property property">&quot;van-button&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/wxcomponents/vant/dist/button/index&quot;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 全局引入</span>
+<span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;globalStyle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token operator">...</span>
+        <span class="token string-property property">&quot;usingComponents&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;van-action-sheet&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/wxcomponents/vant/dist/action-sheet/index&quot;</span><span class="token punctuation">,</span>
+         <span class="token string-property property">&quot;van-button&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/wxcomponents/vant/dist/button/index&quot;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//页面中使用</span>
+<span class="token operator">&lt;</span>van<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">&quot;danger&quot;</span><span class="token operator">&gt;</span>危险按钮<span class="token operator">&lt;</span><span class="token operator">/</span>van<span class="token operator">-</span>button<span class="token operator">&gt;</span>
+复制代码
+<span class="token comment">//页面中引用</span>
+<span class="token keyword">import</span> vanButton <span class="token keyword">from</span> <span class="token string">'@/wxcomponents/vant/dist/button/index'</span>
+<span class="token literal-property property">components</span><span class="token operator">:</span><span class="token punctuation">{</span>
+    vanButton
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token comment">//页面中使用</span>
+<span class="token operator">&lt;</span>van<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">&quot;danger&quot;</span><span class="token operator">&gt;</span>危险按钮<span class="token operator">&lt;</span><span class="token operator">/</span>van<span class="token operator">-</span>button<span class="token operator">&gt;</span>
+</code></pre></div><h3 id="cli-创建项目和-hbuilderx-可视化界面创建项目的区别"><a href="#cli-创建项目和-hbuilderx-可视化界面创建项目的区别" class="header-anchor">#</a> cli 创建项目和 HBuilderX 可视化界面创建项目的区别</h3> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>HBuilderX 可以编辑和运行 cli 项目
+其他项目无法运行 HBuilderX 创建的 uniapp 项目, 只能使用 cli 模式</p></div> <ul><li>cli 创建的项目，是传统的 node 项目结构。工程代码在 src 目录下，编译器在项目下，编译结果在 dist 目录下。
+<img src="/images/cli.png" alt="图片"></li> <li>HBuilderX 可视化创建的项目，是一种免 node 开发概念。工程代码在项目目录下，编译器在 HBuilderX 目录下而不是项目下，编译结果在项目的 unpackage 目录下。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>┌─uniCloud              云空间目录，阿里云为uniCloud-aliyun,腾讯云为uniCloud-tcb（详见uniCloud）
+│─components            符合vue组件规范的uni-app组件目录
+│  └─comp-a.vue         可复用的a组件
+├─utssdk                存放uts文件
+├─pages                 业务页面文件存放的目录
+│  ├─index
+│  │  └─index.vue       index页面
+│  └─list
+│     └─list.vue        list页面
+├─static                存放应用引用的本地静态资源（如图片、视频等）的目录，注意：静态资源只能存放于此
+├─uni_modules           存放<span class="token punctuation">[</span>uni_module<span class="token punctuation">]</span><span class="token punctuation">(</span>/uni_modules<span class="token punctuation">)</span>。
+├─platforms             存放各平台专用页面的目录，详见
+├─nativeplugins         App原生语言插件 详见
+├─nativeResources       App端原生资源目录
+│  └─android            Android原生资源目录 详见
+├─hybrid                App端存放本地html文件的目录，详见
+├─wxcomponents          存放小程序组件的目录，详见
+├─unpackage             非工程代码，一般存放运行或发行的编译结果
+├─AndroidManifest.xml   Android原生应用清单文件 详见
+├─main.js               Vue初始化入口文件
+├─App.vue               应用配置，用来配置App全局样式以及监听 应用生命周期
+├─manifest.json         配置应用名称、appid、logo、版本等打包信息，详见
+├─pages.json            配置页面路由、导航条、选项卡等页面类信息，详见
+└─uni.scss              这里是uni-app内置的常用样式变量
+</code></pre></div><h3 id="http-请求封装"><a href="#http-请求封装" class="header-anchor">#</a> http 请求封装</h3> <h4 id="axios"><a href="#axios" class="header-anchor">#</a> <code>axios</code></h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> axios
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// http.js</span>
+<span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">&quot;axios&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> http <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">timeout</span><span class="token operator">:</span> <span class="token number">50000</span><span class="token punctuation">,</span> <span class="token comment">// 请求超时时间</span>
+  <span class="token literal-property property">baseURL</span><span class="token operator">:</span> <span class="token string">&quot;https://xxx.com&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">withCredentials</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//跨域请求携带cookie</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+http<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  <span class="token punctuation">(</span><span class="token parameter">config</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> config<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+http<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> res <span class="token operator">=</span> response<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+axios<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span><span class="token function-variable function">adapter</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">config</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>config<span class="token punctuation">,</span> <span class="token string">&quot;config&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> settle <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;axios/lib/core/settle&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> buildURL <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;axios/lib/helpers/buildURL&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    uni<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">method</span><span class="token operator">:</span> config<span class="token punctuation">.</span>method<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">url</span><span class="token operator">:</span>
+        config<span class="token punctuation">.</span>baseURL <span class="token operator">+</span>
+        <span class="token function">buildURL</span><span class="token punctuation">(</span>config<span class="token punctuation">.</span>url<span class="token punctuation">,</span> config<span class="token punctuation">.</span>params<span class="token punctuation">,</span> config<span class="token punctuation">.</span>paramsSerializer<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">header</span><span class="token operator">:</span> config<span class="token punctuation">.</span>headers<span class="token punctuation">,</span>
+      <span class="token literal-property property">data</span><span class="token operator">:</span> config<span class="token punctuation">.</span>data<span class="token punctuation">,</span>
+      <span class="token literal-property property">dataType</span><span class="token operator">:</span> config<span class="token punctuation">.</span>dataType<span class="token punctuation">,</span>
+      <span class="token literal-property property">responseType</span><span class="token operator">:</span> config<span class="token punctuation">.</span>responseType<span class="token punctuation">,</span>
+      <span class="token literal-property property">sslVerify</span><span class="token operator">:</span> config<span class="token punctuation">.</span>sslVerify<span class="token punctuation">,</span>
+      <span class="token function-variable function">complete</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token function">complete</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        response <span class="token operator">=</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">data</span><span class="token operator">:</span> response<span class="token punctuation">.</span>data<span class="token punctuation">,</span>
+          <span class="token literal-property property">status</span><span class="token operator">:</span> response<span class="token punctuation">.</span>statusCode<span class="token punctuation">,</span>
+          <span class="token literal-property property">errMsg</span><span class="token operator">:</span> response<span class="token punctuation">.</span>errMsg<span class="token punctuation">,</span>
+          <span class="token literal-property property">header</span><span class="token operator">:</span> response<span class="token punctuation">.</span>header<span class="token punctuation">,</span>
+          <span class="token literal-property property">config</span><span class="token operator">:</span> config<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token function">settle</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span> reject<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="uni-request"><a href="#uni-request" class="header-anchor">#</a> <code>uni.request</code></h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">'@/store/index.js'</span>
+
+<span class="token keyword">const</span> base_url <span class="token operator">=</span> <span class="token punctuation">{</span>
+	<span class="token constant">DEV</span><span class="token operator">:</span> <span class="token string">'http://dev.com'</span>   <span class="token comment">// 开发环境地址</span>
+	<span class="token constant">PROD</span><span class="token operator">:</span> <span class="token string">'http://prod.com'</span><span class="token punctuation">,</span> <span class="token comment">// 生产环境地址</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">timeout</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> <span class="token function-variable function">showToast</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">title</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    uni<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">title</span><span class="token operator">:</span> title<span class="token punctuation">,</span>
+        <span class="token literal-property property">icon</span><span class="token operator">:</span> <span class="token string">'none'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> <span class="token function-variable function">request</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">obj</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+	obj<span class="token punctuation">.</span>url <span class="token operator">=</span> obj<span class="token punctuation">.</span>url <span class="token operator">||</span> <span class="token string">''</span><span class="token punctuation">;</span>
+	obj<span class="token punctuation">.</span>method <span class="token operator">=</span> obj<span class="token punctuation">.</span>method <span class="token operator">||</span> <span class="token string">'GET'</span><span class="token punctuation">;</span>
+	obj<span class="token punctuation">.</span>data <span class="token operator">=</span> obj<span class="token punctuation">.</span>data <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+	obj<span class="token punctuation">.</span>header <span class="token operator">=</span> obj<span class="token punctuation">.</span>header <span class="token operator">||</span> <span class="token string">'application/json'</span><span class="token punctuation">;</span>
+	obj<span class="token punctuation">.</span>loading <span class="token operator">=</span> obj<span class="token punctuation">.</span>loading <span class="token operator">===</span> <span class="token boolean">false</span> <span class="token operator">?</span> <span class="token boolean">false</span> <span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+	<span class="token keyword">let</span> token <span class="token operator">=</span> store<span class="token punctuation">.</span>getters<span class="token punctuation">.</span>token <span class="token operator">||</span> <span class="token string">''</span><span class="token punctuation">;</span> <span class="token comment">// 登录获得的 token</span>
+        <span class="token keyword">let</span> loadingStatus <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+	<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>loadingStatus <span class="token operator">&amp;&amp;</span> obj<span class="token punctuation">.</span>loading<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                uni<span class="token punctuation">.</span><span class="token function">showLoading</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                        <span class="token literal-property property">title</span><span class="token operator">:</span><span class="token string">'加载中'</span><span class="token punctuation">,</span>
+                        <span class="token literal-property property">mask</span><span class="token operator">:</span> <span class="token boolean">true</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">800</span><span class="token punctuation">)</span> <span class="token comment">// 800毫秒后如果loadingStatus === false 则表示请求返回了，不显示loading</span>
+	<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+		uni<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            <span class="token operator">...</span>config<span class="token punctuation">,</span>
+			<span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">'development'</span> <span class="token operator">?</span> base_url<span class="token punctuation">.</span><span class="token constant">DEV</span> <span class="token operator">:</span> base_url<span class="token punctuation">.</span><span class="token constant">PROD</span><span class="token punctuation">)</span> <span class="token operator">+</span> obj<span class="token punctuation">.</span>url<span class="token punctuation">,</span>
+			<span class="token literal-property property">method</span><span class="token operator">:</span> obj<span class="token punctuation">.</span>method<span class="token punctuation">,</span>
+			<span class="token literal-property property">data</span><span class="token operator">:</span> obj<span class="token punctuation">.</span>data<span class="token punctuation">,</span>
+			<span class="token literal-property property">header</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token string-property property">'TOKEN'</span><span class="token operator">:</span> token<span class="token punctuation">,</span>
+                    <span class="token string-property property">'Content-Type'</span><span class="token operator">:</span> obj<span class="token punctuation">.</span>header
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token comment">// 服务器成功返回的回调函数</span>
+                            <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>statusCode <span class="token operator">===</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">let</span> result <span class="token operator">=</span> res<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>result<span class="token punctuation">.</span>code <span class="token operator">===</span> <span class="token string">&quot;000000&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 跟后端约定的成功code</span>
+                                    <span class="token function">resolve</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                    <span class="token keyword">return</span><span class="token punctuation">;</span>
+                                <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>code <span class="token operator">===</span> <span class="token number">40005</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">// 登录过期的code</span>
+                                    store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'user/logout'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 清空token</span>
+                                    <span class="token function">reject</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                    uni<span class="token punctuation">.</span><span class="token function">redirectTo</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                                        <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'/pages/index/index'</span>
+                                    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+                                    uni<span class="token punctuation">.</span><span class="token function">showModal</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                                        <span class="token literal-property property">showCancel</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                                        <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">'登录过期'</span><span class="token punctuation">,</span>
+                                        <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+                                    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                    <span class="token keyword">return</span><span class="token punctuation">;</span>
+                                <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>code <span class="token operator">===</span> <span class="token number">50009</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">// 其他报错的code</span>
+                                    loadingStatus <span class="token operator">=</span> <span class="token boolean">false</span>
+                                    <span class="token function">showToast</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                    <span class="token function">reject</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                    <span class="token keyword">return</span><span class="token punctuation">;</span>
+                                <span class="token punctuation">}</span>
+				<span class="token function">reject</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span> <span class="token comment">// 返回值非 200，强制显示提示信息</span>
+                                loadingStatus <span class="token operator">=</span> <span class="token boolean">false</span>
+                                <span class="token function">showToast</span><span class="token punctuation">(</span><span class="token string">'['</span> <span class="token operator">+</span> res<span class="token punctuation">.</span>statusCode <span class="token operator">+</span> <span class="token string">'] 系统处理失败'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                <span class="token function">reject</span><span class="token punctuation">(</span><span class="token string">'['</span> <span class="token operator">+</span> res<span class="token punctuation">.</span>statusCode <span class="token operator">+</span> <span class="token string">'] 系统处理失败'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token function-variable function">fail</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token comment">// 接口调用失败的回调函数</span>
+                            <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">.</span>errMsg <span class="token operator">!=</span> <span class="token string">'request:fail abort'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                                loadingStatus <span class="token operator">=</span> <span class="token boolean">false</span>
+                                <span class="token function">showToast</span><span class="token punctuation">(</span><span class="token string">'连接超时，请检查您的网络。'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                <span class="token function">reject</span><span class="token punctuation">(</span><span class="token string">'连接超时，请检查您的网络。'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token function-variable function">complete</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                            <span class="token keyword">if</span> <span class="token punctuation">(</span>loadingStatus <span class="token operator">&amp;&amp;</span> obj<span class="token punctuation">.</span>loading<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                              uni<span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                              loadingStatus <span class="token operator">=</span> <span class="token boolean">false</span>
+                            <span class="token punctuation">}</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> request
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress/assets/js/app.ce8fac21.js" defer></script><script src="/vuepress/assets/js/3.cc7a75da.js" defer></script><script src="/vuepress/assets/js/48.f09663e3.js" defer></script>
+  </body>
+</html>

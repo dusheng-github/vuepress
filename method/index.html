@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>解决方案 | 前端笔记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/vuepress/head.png">
+    <meta name="description" content="常用功能记录">
+    
+    <link rel="preload" href="/vuepress/assets/css/0.styles.af1e595c.css" as="style"><link rel="preload" href="/vuepress/assets/js/app.ce8fac21.js" as="script"><link rel="preload" href="/vuepress/assets/js/3.cc7a75da.js" as="script"><link rel="preload" href="/vuepress/assets/js/38.8b83c451.js" as="script"><link rel="preload" href="/vuepress/assets/js/8.0af60bd4.js" as="script"><link rel="preload" href="/vuepress/assets/js/10.77cb09d2.js" as="script"><link rel="prefetch" href="/vuepress/assets/js/1.b285d1f0.js"><link rel="prefetch" href="/vuepress/assets/js/11.6342cc69.js"><link rel="prefetch" href="/vuepress/assets/js/12.f89da415.js"><link rel="prefetch" href="/vuepress/assets/js/13.85f0bec7.js"><link rel="prefetch" href="/vuepress/assets/js/14.616de84f.js"><link rel="prefetch" href="/vuepress/assets/js/15.b6e7660e.js"><link rel="prefetch" href="/vuepress/assets/js/16.3a76af77.js"><link rel="prefetch" href="/vuepress/assets/js/17.0f9e8a04.js"><link rel="prefetch" href="/vuepress/assets/js/18.f7b0ff3d.js"><link rel="prefetch" href="/vuepress/assets/js/19.a9a90c62.js"><link rel="prefetch" href="/vuepress/assets/js/20.f7828815.js"><link rel="prefetch" href="/vuepress/assets/js/21.18298c33.js"><link rel="prefetch" href="/vuepress/assets/js/22.99faa4c9.js"><link rel="prefetch" href="/vuepress/assets/js/23.374f8adf.js"><link rel="prefetch" href="/vuepress/assets/js/24.35cecd23.js"><link rel="prefetch" href="/vuepress/assets/js/25.1f5d9cde.js"><link rel="prefetch" href="/vuepress/assets/js/26.23a4236b.js"><link rel="prefetch" href="/vuepress/assets/js/27.66cf1319.js"><link rel="prefetch" href="/vuepress/assets/js/28.f0302472.js"><link rel="prefetch" href="/vuepress/assets/js/29.155b728d.js"><link rel="prefetch" href="/vuepress/assets/js/30.8275db6d.js"><link rel="prefetch" href="/vuepress/assets/js/31.60254a0d.js"><link rel="prefetch" href="/vuepress/assets/js/32.88a4b356.js"><link rel="prefetch" href="/vuepress/assets/js/33.1c6f37dd.js"><link rel="prefetch" href="/vuepress/assets/js/34.4ce54cd4.js"><link rel="prefetch" href="/vuepress/assets/js/35.9b37b408.js"><link rel="prefetch" href="/vuepress/assets/js/36.9434aa3d.js"><link rel="prefetch" href="/vuepress/assets/js/37.aaf9735f.js"><link rel="prefetch" href="/vuepress/assets/js/39.b45e1334.js"><link rel="prefetch" href="/vuepress/assets/js/4.a67936a3.js"><link rel="prefetch" href="/vuepress/assets/js/40.61d98dcd.js"><link rel="prefetch" href="/vuepress/assets/js/41.e5f6527f.js"><link rel="prefetch" href="/vuepress/assets/js/42.c6aea904.js"><link rel="prefetch" href="/vuepress/assets/js/43.94f65b6f.js"><link rel="prefetch" href="/vuepress/assets/js/44.5c81d4e2.js"><link rel="prefetch" href="/vuepress/assets/js/45.c7c0d38e.js"><link rel="prefetch" href="/vuepress/assets/js/46.415097f2.js"><link rel="prefetch" href="/vuepress/assets/js/47.a10079a3.js"><link rel="prefetch" href="/vuepress/assets/js/48.f09663e3.js"><link rel="prefetch" href="/vuepress/assets/js/49.9df9063d.js"><link rel="prefetch" href="/vuepress/assets/js/5.7498ca8b.js"><link rel="prefetch" href="/vuepress/assets/js/50.dd182069.js"><link rel="prefetch" href="/vuepress/assets/js/51.070f4fa2.js"><link rel="prefetch" href="/vuepress/assets/js/52.c01a9efc.js"><link rel="prefetch" href="/vuepress/assets/js/53.034a0e5c.js"><link rel="prefetch" href="/vuepress/assets/js/6.c7c96692.js"><link rel="prefetch" href="/vuepress/assets/js/7.19065d28.js"><link rel="prefetch" href="/vuepress/assets/js/9.9215a143.js">
+    <link rel="stylesheet" href="/vuepress/assets/css/0.styles.af1e595c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress/" class="home-link router-link-active"><img src="/vuepress/logo.png" alt="前端笔记" class="logo"> <span class="site-name can-hide">前端笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="html-js" class="dropdown-title"><span class="title">html-js</span> <span class="arrow down"></span></button> <button type="button" aria-label="html-js" class="mobile-dropdown-title"><span class="title">html-js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/html/" class="nav-link">
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/js/" class="nav-link">
+  js
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress/uniapp/" class="nav-link">
+  uniapp
+</a></div><div class="nav-item"><a href="/vuepress/vue/" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/vuepress/react/" class="nav-link">
+  react
+</a></div><div class="nav-item"><a href="/vuepress/wxMini/" class="nav-link">
+  微信小程序
+</a></div><div class="nav-item"><a href="/vuepress/audition/" class="nav-link">
+  面试
+</a></div><div class="nav-item"><a href="/vuepress/performance/" class="nav-link">
+  性能优化
+</a></div><div class="nav-item"><a href="/vuepress/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他技术" class="dropdown-title"><span class="title">其他技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他技术" class="mobile-dropdown-title"><span class="title">其他技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/echarts/" class="nav-link">
+  echarts
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/gitSvn/" class="nav-link">
+  git &amp; svn
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/jquery/" class="nav-link">
+  jquery
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/vite/" class="nav-link">
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/flutter/" class="nav-link">
+  flutter
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/react native/" class="nav-link">
+  react native
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/vsCode/" class="nav-link">
+  vs code插件和配置
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/db/" class="nav-link">
+  数据库的连接
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/devOps/" class="nav-link">
+  前端部署
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件 &amp; 库" class="dropdown-title"><span class="title">组件 &amp; 库</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件 &amp; 库" class="mobile-dropdown-title"><span class="title">组件 &amp; 库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/components/" class="nav-link">
+  组件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/plugins/" class="nav-link">
+  插件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/npm/" class="nav-link">
+  常用npm库
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级前端" class="dropdown-title"><span class="title">高级前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="高级前端" class="mobile-dropdown-title"><span class="title">高级前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/designMode/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/method/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  解决方案
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/cli/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/safe/" class="nav-link">
+  前端安全
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="链接" class="dropdown-title"><span class="title">链接</span> <span class="arrow down"></span></button> <button type="button" aria-label="链接" class="mobile-dropdown-title"><span class="title">链接</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ds-web.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的博客hexo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/dusehngcsdn?spm=1000.2115.3001.5343/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的博客csdn
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/dusheng-github" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.npmjs.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的npm
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="html-js" class="dropdown-title"><span class="title">html-js</span> <span class="arrow down"></span></button> <button type="button" aria-label="html-js" class="mobile-dropdown-title"><span class="title">html-js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/html/" class="nav-link">
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/js/" class="nav-link">
+  js
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress/uniapp/" class="nav-link">
+  uniapp
+</a></div><div class="nav-item"><a href="/vuepress/vue/" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/vuepress/react/" class="nav-link">
+  react
+</a></div><div class="nav-item"><a href="/vuepress/wxMini/" class="nav-link">
+  微信小程序
+</a></div><div class="nav-item"><a href="/vuepress/audition/" class="nav-link">
+  面试
+</a></div><div class="nav-item"><a href="/vuepress/performance/" class="nav-link">
+  性能优化
+</a></div><div class="nav-item"><a href="/vuepress/webpack/" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他技术" class="dropdown-title"><span class="title">其他技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他技术" class="mobile-dropdown-title"><span class="title">其他技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/echarts/" class="nav-link">
+  echarts
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/gitSvn/" class="nav-link">
+  git &amp; svn
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/jquery/" class="nav-link">
+  jquery
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/vite/" class="nav-link">
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/flutter/" class="nav-link">
+  flutter
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/react native/" class="nav-link">
+  react native
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/vsCode/" class="nav-link">
+  vs code插件和配置
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/db/" class="nav-link">
+  数据库的连接
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/devOps/" class="nav-link">
+  前端部署
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件 &amp; 库" class="dropdown-title"><span class="title">组件 &amp; 库</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件 &amp; 库" class="mobile-dropdown-title"><span class="title">组件 &amp; 库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/components/" class="nav-link">
+  组件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/plugins/" class="nav-link">
+  插件
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/npm/" class="nav-link">
+  常用npm库
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级前端" class="dropdown-title"><span class="title">高级前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="高级前端" class="mobile-dropdown-title"><span class="title">高级前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/designMode/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/method/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  解决方案
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/cli/" class="nav-link">
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/safe/" class="nav-link">
+  前端安全
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="链接" class="dropdown-title"><span class="title">链接</span> <span class="arrow down"></span></button> <button type="button" aria-label="链接" class="mobile-dropdown-title"><span class="title">链接</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ds-web.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的博客hexo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/dusehngcsdn?spm=1000.2115.3001.5343/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的博客csdn
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/dusheng-github" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.npmjs.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的npm
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="解决方案"><a href="#解决方案" class="header-anchor">#</a> 解决方案</h1> <h2 id="后台管理系统模板"><a href="#后台管理系统模板" class="header-anchor">#</a> 后台管理系统模板</h2> <h2 id="鉴权"><a href="#鉴权" class="header-anchor">#</a> 鉴权</h2> <h2 id="防止重复提交"><a href="#防止重复提交" class="header-anchor">#</a> 防止重复提交</h2> <h2 id="枚举的设置"><a href="#枚举的设置" class="header-anchor">#</a> 枚举的设置</h2> <h2 id="跨域"><a href="#跨域" class="header-anchor">#</a> 跨域</h2> <h3 id="什么是跨域"><a href="#什么是跨域" class="header-anchor">#</a> 什么是跨域?</h3> <p>指的是浏览器不能执行其他网站的脚本。是由浏览器的<code>同源策略</code>造成的，是浏览器对js施加的安全限制</p> <h3 id="什么是同源策略"><a href="#什么是同源策略" class="header-anchor">#</a> 什么是同源策略？</h3> <p>同源是指协议，域名，端口相同。当页面在执行一个脚本时会检查访问的资源是否同源。非同源，请求数据时，浏览器会在控制台中报一个异常，拒绝访问。</p> <div class="el-image"><div class="el-image__placeholder"></div><!----></div> <table><thead><tr><th>当前页面的url</th> <th>请求页面的url</th> <th>是否跨域</th> <th>原因</th></tr></thead> <tbody><tr><td>http://www.test.com/</td> <td>http://www.test.com/index.html</td> <td>否</td> <td>同源（协议、域名、端口号相同）</td></tr> <tr><td>http://www.test.com/</td> <td>https://www.test.com/index.html</td> <td>是</td> <td>协议不同（http/https）</td></tr> <tr><td>http://www.test.com/</td> <td>http://www.baidu.com/</td> <td>是</td> <td>主域名不同（test/baidu)</td></tr> <tr><td>http://www.test.com/</td> <td>http://blog.test.com/</td> <td>是</td> <td>子域名不同（www/blog）</td></tr> <tr><td>http://www.test.com:8080/</td> <td>http://www.test.com:7001/</td> <td>是</td> <td>端口号不同（8080/7001）</td></tr></tbody></table> <h3 id="跨域的解决方案"><a href="#跨域的解决方案" class="header-anchor">#</a> 跨域的解决方案</h3> <h4 id="_1-jsonp"><a href="#_1-jsonp" class="header-anchor">#</a> 1. jsonp</h4> <p>这种方法是浏览器会借助script这个标签去访问其他服务器的资源, 达到传参的目的, 因为浏览器的script标签路径不会做拦截和校验. 一般前端会定义参数和回调函数, 然后组装到url上作为script.src, src指向的服务器会做处理, 执行回调函数并传值</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// http://localhost:9990/jsonp.js</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">1221</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- http://localhost:8888/test.html--&gt;</span>
+<span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>X-UA-Compatible<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>IE=edge<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1.0<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+    <span class="token keyword">const</span> <span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">alert</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://localhost:9990/jsonp.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><p>这样test.html中的就会alert({ a: 1221 })了, 这样就达到了跨域传参的效果, 也就是8888端口访问9990端口, 但是jsonp也可能造成xss攻击, 如果这个接口被别人, 也这样去用, 会导致网站信息泄露</p> <h4 id="_2-cors"><a href="#_2-cors" class="header-anchor">#</a> 2.cors</h4> <p>CORS是一个W3C标准，全称是&quot;跨域资源共享&quot;（Cross-origin resource sharing）。它允许浏览器向跨源服务器，发出XMLHttpRequest请求，从而克服了AJAX只能同源使用的限制。
+这个其实就是后端去处理了, 反正就是放开对服务器地址的访问, 不同域名也可以访问我, 比如那种完全放开的api就是这样, 对前端的访问不做限制
+服务端响应的时候添加一个 <code>Access-Control-Allow-Origin</code> 的响应头</p> <div class="language-js extra-class"><pre class="language-js"><code>res<span class="token punctuation">.</span><span class="token function">setHeader</span><span class="token punctuation">(</span><span class="token string">&quot;Access-Control-Allow-Origin&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;*&quot;</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="_3-iframe-postmessage"><a href="#_3-iframe-postmessage" class="header-anchor">#</a> 3.iframe + postMessage</h4> <p>比如a网站想和b网站做交互, 如何去实现呢, 可以用postMessage, a网站post 一个message, b网站进行一个监听, 然后处理a网站传输过来的值即可</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>utf-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>我是a网站(http://localhost:999)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Runoob<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>sendMessage<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span>
+      <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>receiver<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://127.0.0.1:5500/aaa.html<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>300<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>360<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>你的浏览器不支持 iframe<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+      window<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> receiver <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;receiver&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>contentWindow<span class="token punctuation">;</span>
+        <span class="token keyword">var</span> btn <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;sendMessage&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        btn<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">var</span> val <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;text&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+          receiver<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span>
+            <span class="token string">&quot;Hello &quot;</span> <span class="token operator">+</span> val <span class="token operator">+</span> <span class="token string">&quot;！&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;http://127.0.0.1:5500/aaa.html&quot;</span>
+          <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>X-UA-Compatible<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>IE=edge<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1.0<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>我是b网站(http://127.0.0.1:5500/aaa.htm)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+      <span class="token selector">body</span> <span class="token punctuation">{</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 900px<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>recMessage<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+      window<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> messageEle <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;recMessage&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;message&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 监听 message 事件</span>
+
+          <span class="token comment">// alert(e.origin);</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span>origin <span class="token operator">!==</span> <span class="token string">&quot;http://localhost:9991&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 验证消息来源地址</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+          messageEle<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">&quot;从&quot;</span> <span class="token operator">+</span> e<span class="token punctuation">.</span>origin <span class="token operator">+</span> <span class="token string">&quot;收到消息： &quot;</span> <span class="token operator">+</span> e<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><h4 id="_4-webpack-或者-nginx"><a href="#_4-webpack-或者-nginx" class="header-anchor">#</a> 4. webpack  或者 nginx</h4> <p>其实这种我个人在本地开发用的比较多, 前后端分离的项目, 如果想访问后端的接口地址, 经常会碰到跨域的问题, 工程化的项目在wepack.config.js 或者 vue.config.js中的devServer.proxy配置一下后端地址即可</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// vue.config.js</span>
+<span class="token literal-property property">proxy</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">'/api'</span><span class="token operator">:</span><span class="token punctuation">{</span>
+        <span class="token comment">//转发后的目标地址</span>
+        <span class="token literal-property property">target</span><span class="token operator">:</span><span class="token string">'localhost:3000'</span><span class="token punctuation">,</span>
+        <span class="token comment">// 发送请求时，请求路径重写 /api/xxx -&gt;  /xxx （去掉/api）</span>
+        <span class="token literal-property property">pathRewrite</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string-property property">'^/api'</span><span class="token operator">:</span> <span class="token string">''</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// vue.config.js</span>
+<span class="token comment">// 全局变量 VUE_APP_BASE_API</span>
+<span class="token literal-property property">proxy</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">VUE_APP_BASE_API</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">target</span><span class="token operator">:</span> target<span class="token operator">:</span><span class="token string">'localhost:3000'</span><span class="token punctuation">,</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">changeOrigin</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">pathRewrite</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">[</span><span class="token string">'^'</span> <span class="token operator">+</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">VUE_APP_BASE_API</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token string">''</span>
+    <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+</code></pre></div><p>但是比较小的项目怎么办, 类似jquery + layui这种, 根本用不上脚手架什么的, 可以用在本地下载一个nginx, 启动nginx.exe, 然后修改一下nginx.conf, 再nginx.exe -s reload即可, 例如以下配置会导致访问localhost: 9991/api/getUser =&gt;  http://xxxxx.cn:8085/api/getUser, 达到跨域的目的</p> <div class="language-js extra-class"><pre class="language-js"><code>    server <span class="token punctuation">{</span>
+        listen       <span class="token number">9991</span><span class="token punctuation">;</span> <span class="token comment">// 本地开发端口, 可以开好多</span>
+        server_name  localhost<span class="token punctuation">;</span>
+
+        #charset koi8<span class="token operator">-</span>r<span class="token punctuation">;</span>
+
+        #access_log  logs<span class="token operator">/</span>host<span class="token punctuation">.</span>access<span class="token punctuation">.</span>log  main<span class="token punctuation">;</span>
+
+        location <span class="token operator">/</span> <span class="token punctuation">{</span>
+            root   <span class="token constant">C</span><span class="token operator">:</span>\Users\xxxx\Desktop\demo<span class="token punctuation">;</span> <span class="token comment">// 本地开发文件夹</span>
+            index  index<span class="token punctuation">.</span>html  index<span class="token punctuation">.</span>htm<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        location <span class="token operator">/</span>api <span class="token punctuation">{</span> <span class="token comment">// 所有接口中带api的都会指向http://xxxxx.cn:8085/api</span>
+            
+            proxy_pass http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>xxxxx<span class="token punctuation">.</span>cn<span class="token operator">:</span><span class="token number">8085</span><span class="token operator">/</span>api<span class="token punctuation">;</span> 
+
+        <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+</code></pre></div><h4 id="_5-关闭浏览器安全策略-粗暴不推荐"><a href="#_5-关闭浏览器安全策略-粗暴不推荐" class="header-anchor">#</a> 5. 关闭浏览器安全策略(粗暴不推荐)</h4> <p>点击chrome应用鼠标右键，选择属性–&gt;快捷方式–&gt;目标（空1格，将下面对应的信息复制进去，应用和确定）–&gt; 打开chrome –&gt; 即可实现 解除浏览器的跨域限制
+<div class="el-image"><div class="el-image__placeholder"></div><!----></div></p> <div class="language-bash extra-class"><pre class="language-bash"><code> –args --disable-web-security --user-data-dir<span class="token operator">=</span>D:<span class="token punctuation">\</span>chrome
+</code></pre></div><h2 id="网站自适应"><a href="#网站自适应" class="header-anchor">#</a> 网站自适应</h2> <h3 id="方案1-rem-postcss-pxtorem-方案"><a href="#方案1-rem-postcss-pxtorem-方案" class="header-anchor">#</a> 方案1: <code>rem</code> + <code>postcss-pxtorem</code> 方案</h3> <ol><li>可以在@utils文件下新建rem.js文件, 然后在src/main.js中引入<code>import &quot;@/utils/rem&quot;</code></li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 基准大小</span>
+<span class="token keyword">const</span> baseSize <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token comment">// 设置 rem 函数</span>
+<span class="token keyword">function</span> <span class="token function">setRem</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 当前页面宽度相对于 1920 宽的缩放比例，可根据自己需要修改。</span>
+  <span class="token keyword">const</span> scale <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientWidth <span class="token operator">/</span> <span class="token number">1920</span>
+  <span class="token comment">// 设置页面根节点字体大小, 字体大小最小为12</span>
+  <span class="token keyword">const</span> fontSize <span class="token operator">=</span> <span class="token punctuation">(</span>baseSize <span class="token operator">*</span> Math<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span>scale<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>style<span class="token punctuation">.</span>fontSize <span class="token operator">=</span> fontSize <span class="token operator">+</span> <span class="token string">'px'</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 初始化</span>
+<span class="token function">setRem</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// 改变窗口大小时重新设置 rem,这里最好加上节流</span>
+window<span class="token punctuation">.</span><span class="token function-variable function">onresize</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">setRem</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 行间一定写rem, 因为pxtorem不会做转行, css优先推荐px</span>
+</code></pre></div><ol start="2"><li>安装<code>postcss-pxtorem</code>库, 这样可以书写px, 该插件会转成rem(行间样式不会转换, 所以行间还是rem!!!)</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> postcss-pxtorem
+</code></pre></div><ol start="3"><li>项目最外层新建<code>.postcssrc.js文件</code>, 内容如下</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">'postcss-pxtorem'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">rootValue</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">// rem = px / rootValue, 此处表示1px会转换成1rem</span>
+        <span class="token literal-property property">propList</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'*'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">mixPixelValue</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">selectorBlackList</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'.el-table'</span><span class="token punctuation">]</span> <span class="token comment">// 限定table不转px</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span> 
+</code></pre></div><h3 id="方案2-可伸缩组件-scale"><a href="#方案2-可伸缩组件-scale" class="header-anchor">#</a> 方案2: 可伸缩组件(scale)</h3> <div class="wrap" data-v-652dbd46><div class="title" data-v-652dbd46>演示：缩放自适应(请缩放鼠标滚轮, 来模仿不同分辨率的屏幕, 红色区域的大小不会随着缩放而改变)</div> <div class="content" data-v-652dbd46><div class="screen-wrapper" data-v-593d2d1c><div id="screen" class="screen" data-v-593d2d1c><div style="width:192px;height:96px;background:red;" data-v-593d2d1c></div></div></div></div></div> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>screen-wrapper<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>screen<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>screen<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 初始化自适应  ----在刚显示的时候就开始适配一次</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleScreenAuto</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 绑定自适应函数   ---防止浏览器栏变化后不再适配</span>
+    window<span class="token punctuation">.</span>onresize <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleScreenAuto<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">deleted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span>onresize <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 数据大屏自适应函数</span>
+    <span class="token function">handleScreenAuto</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> designDraftWidth <span class="token operator">=</span> <span class="token number">1920</span><span class="token punctuation">;</span> <span class="token comment">//设计稿的宽度</span>
+      <span class="token keyword">const</span> designDraftHeight <span class="token operator">=</span> <span class="token number">960</span><span class="token punctuation">;</span> <span class="token comment">//设计稿的高度</span>
+      <span class="token comment">// 根据屏幕的变化适配的比例</span>
+      <span class="token keyword">const</span> scaleX <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientWidth <span class="token operator">/</span> designDraftWidth<span class="token punctuation">;</span>
+      <span class="token keyword">const</span> scaleY <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientHeight <span class="token operator">/</span> designDraftHeight<span class="token punctuation">;</span>
+      <span class="token comment">// 缩放比例</span>
+      document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span>
+        <span class="token string">&quot;#screen&quot;</span>
+      <span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>transform <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">scale(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>scaleX<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>scaleY<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">) translate(-50%, -50%)</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">scoped</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+<span class="token selector">.screen-root</span> <span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token selector">.screen</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 1920px<span class="token punctuation">;</span> //设计稿的宽度
+    <span class="token property">height</span><span class="token punctuation">:</span> 960px<span class="token punctuation">;</span> //设计稿的高度
+    <span class="token property">transform-origin</span><span class="token punctuation">:</span> 0 0<span class="token punctuation">;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> -50%<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 使用</span>
+<span class="token operator">&lt;</span>ScaleBox<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">&quot;width: 192px; height: 96px; background: red&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>ScaleBox<span class="token operator">&gt;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress/assets/js/app.ce8fac21.js" defer></script><script src="/vuepress/assets/js/3.cc7a75da.js" defer></script><script src="/vuepress/assets/js/38.8b83c451.js" defer></script><script src="/vuepress/assets/js/8.0af60bd4.js" defer></script><script src="/vuepress/assets/js/10.77cb09d2.js" defer></script>
+  </body>
+</html>
